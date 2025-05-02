@@ -2,40 +2,116 @@
   "students": [
     {
       "id": "1",
-      "firstName": "Hoshim",
-      "lastName": "Mirzayev",
+      "firstName": "John",
+      "lastName": "Doe",
       "birthDate": "11-11-2011",
       "classId": 2
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "birthDate": "22-03-2010",
+      "classId": 1
+    },
+    {
+      "id": "3",
+      "firstName": "Tom",
+      "lastName": "Brown",
+      "birthDate": "30-06-2012",
+      "classId": 3
+    },
+    {
+      "id": "4",
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "birthDate": "19-09-2011",
+      "classId": 2
+    },
+    {
+      "id": "5",
+      "firstName": "Chris",
+      "lastName": "Davis",
+      "birthDate": "02-02-2010",
+      "classId": 4
     }
   ],
   "classes": [
     {
       "id": "1",
-      "name": "Urushqoqlar",
-      "studentCount": 1,
+      "name": "Mathematics 101",
+      "studentCount": 20,
       "teacherId": 1
+    },
+    {
+      "id": "2",
+      "name": "History 202",
+      "studentCount": 18,
+      "teacherId": 2
+    },
+    {
+      "id": "3",
+      "name": "Science 303",
+      "studentCount": 25,
+      "teacherId": 3
+    },
+    {
+      "id": "4",
+      "name": "English Literature",
+      "studentCount": 15,
+      "teacherId": 4
+    },
+    {
+      "id": "5",
+      "name": "Physical Education",
+      "studentCount": 30,
+      "teacherId": 5
     }
   ],
   "teachers": [
     {
       "id": "1",
-      "firstName": "Lola",
-      "lastName": "Ahmedova",
-      "classes": [
-        1
-      ],
-      "birthDate": "11-11-1989"
+      "firstName": "Michael",
+      "lastName": "Walker",
+      "classes": [1],
+      "birthDate": "15-05-1985"
+    },
+    {
+      "id": "2",
+      "firstName": "Sarah",
+      "lastName": "Taylor",
+      "classes": [2],
+      "birthDate": "22-11-1980"
+    },
+    {
+      "id": "3",
+      "firstName": "David",
+      "lastName": "Harris",
+      "classes": [3],
+      "birthDate": "30-07-1975"
+    },
+    {
+      "id": "4",
+      "firstName": "Laura",
+      "lastName": "Martinez",
+      "classes": [4],
+      "birthDate": "14-03-1990"
+    },
+    {
+      "id": "5",
+      "firstName": "Brian",
+      "lastName": "Moore",
+      "classes": [5],
+      "birthDate": "09-09-1980"
     }
   ],
-  "school": [
-    {
-      "name": "144-sonli Umumta'lim maktabi",
-      "location": "Muqiymiy ko'ch. 100 uy",
-      "overallStudentCount": 1,
-      "overallStaffCount": 1,
-      "overallClassCount": 1,
-      "about": "Yaxshi maktab!",
-      "phoneNumber": "+9989565555551"
-    }
-  ]
+  "school": {
+    "name": "Greenwood Academy",
+    "location": "456 Elm Street, Springfield",
+    "overallStudentCount": 100,
+    "overallStaffCount": 10,
+    "overallClassCount": 5,
+    "about": "Greenwood Academy is a leading educational institution providing high-quality education to students from diverse backgrounds. We strive for academic excellence and personal growth.",
+    "phoneNumber": "(123) 456-7890"
+  }
 }
