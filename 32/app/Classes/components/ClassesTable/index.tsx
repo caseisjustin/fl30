@@ -4,13 +4,14 @@ import { classTableCols } from './columns'
 import { useClasses } from '@/hooks'
 
 const ClassesTable = () => {
-    const { data: users } = useClasses();
+    const { data: classes } = useClasses();
 
     return (
         <div>
             <Table
                 columns={classTableCols}
-                dataSrc={users}
+                dataSrc={classes}
+                loading={false}
             />
         </div>
     )

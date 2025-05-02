@@ -11,6 +11,7 @@ const SchoolInfosTable = () => {
             <Table
                 columns={schoolTableCols}
                 dataSrc={school}
+                loading={false}
             />
         </div>
     )

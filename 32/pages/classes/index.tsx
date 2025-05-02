@@ -1,8 +1,9 @@
+import { Classes } from '@/app'
 import React from 'react'
 
 const ClassesPage = () => {
   return (
-    <div>ClassesPage</div>
+    <Classes/>
   )
 }
 

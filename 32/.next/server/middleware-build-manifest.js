@@ -23,10 +23,25 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/classes": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/classes.js"
+    ],
+    "/school-info": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/school-info.js"
+    ],
     "/students": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/students.js"
+    ],
+    "/teachers": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/teachers.js"
     ]
   },
   "ampFirstPages": []

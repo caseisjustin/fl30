@@ -4,13 +4,14 @@ import { teacherTableCols } from './columns'
 import { useTeachers } from '@/hooks'
 
 const TeachersTable = () => {
-    const { data: users } = useTeachers();
+    const { data: teachers } = useTeachers();
 
     return (
         <div>
             <Table
                 columns={teacherTableCols}
-                dataSrc={users}
+                dataSrc={teachers}
+                loading={false}
             />
         </div>
     )

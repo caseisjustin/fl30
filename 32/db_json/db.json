@@ -27,13 +27,15 @@
       "birthDate": "11-11-1989"
     }
   ],
-  "school": {
-    "name": "144-sonli Umumta'lim maktabi",
-    "location": "Muqiymiy ko'ch. 100 uy",
-    "overallStudentCount": 1,
-    "overallStaffCount": 1,
-    "overallClassCount": 1,
-    "about": "Yaxshi maktab!",
-    "phoneNumber": "+9989565555551"
-  }
+  "school": [
+    {
+      "name": "144-sonli Umumta'lim maktabi",
+      "location": "Muqiymiy ko'ch. 100 uy",
+      "overallStudentCount": 1,
+      "overallStaffCount": 1,
+      "overallClassCount": 1,
+      "about": "Yaxshi maktab!",
+      "phoneNumber": "+9989565555551"
+    }
+  ]
 }

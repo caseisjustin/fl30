@@ -3,7 +3,7 @@ import instance from "./instance"
 
 export const getSchoolInfos = async () => {
     try {
-        const res = await instance.get<SchoolInfo[]>('/SchoolInfos');
+        const res = await instance.get<SchoolInfo[]>('/school');
         return res.data;
     } catch(e) {
         alert("Failed to fetch SchoolInfos!");

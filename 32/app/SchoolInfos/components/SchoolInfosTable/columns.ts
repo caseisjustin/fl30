@@ -1,15 +1,31 @@
 export const schoolTableCols = [
     {
         title: "Name",
-        dataIndex: "firstName"
+        dataIndex: "name"
     },
     {
-        title: "Amount of students",
-        dataIndex: "studentCount"
+        title: "Address",
+        dataIndex: "location"
     }
     ,
     {
-        title: "Teacher Info",
-        dataIndex: "teacherId"
+        title: "All Students count",
+        dataIndex: "overallStudentCount"
+    },
+    {
+        title: "All Staff count",
+        dataIndex: "overallStaffCount"
+    },
+    {
+        title: "All Classes count",
+        dataIndex: "overallClassCount"
+    },
+    {
+        title: "Desription",
+        dataIndex: "about"
+    },
+    {
+        title: "Contact",
+        dataIndex: "phoneNumber"
     }
 ]

@@ -1,8 +1,9 @@
+import { SchoolInfos } from '@/app'
 import React from 'react'
 
 const SchoolInfoPage = () => {
   return (
-    <div>SchoolInfoPage</div>
+    <SchoolInfos/>
   )
 }
 
