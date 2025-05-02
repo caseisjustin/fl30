@@ -73,45 +73,57 @@
       "id": "1",
       "firstName": "Michael",
       "lastName": "Walker",
-      "classes": [1],
+      "classes": [
+        1
+      ],
       "birthDate": "15-05-1985"
     },
     {
       "id": "2",
       "firstName": "Sarah",
       "lastName": "Taylor",
-      "classes": [2],
+      "classes": [
+        2
+      ],
       "birthDate": "22-11-1980"
     },
     {
       "id": "3",
       "firstName": "David",
       "lastName": "Harris",
-      "classes": [3],
+      "classes": [
+        3
+      ],
       "birthDate": "30-07-1975"
     },
     {
       "id": "4",
       "firstName": "Laura",
       "lastName": "Martinez",
-      "classes": [4],
+      "classes": [
+        4
+      ],
       "birthDate": "14-03-1990"
     },
     {
       "id": "5",
       "firstName": "Brian",
       "lastName": "Moore",
-      "classes": [5],
+      "classes": [
+        5
+      ],
       "birthDate": "09-09-1980"
     }
   ],
-  "school": {
-    "name": "Greenwood Academy",
-    "location": "456 Elm Street, Springfield",
-    "overallStudentCount": 100,
-    "overallStaffCount": 10,
-    "overallClassCount": 5,
-    "about": "Greenwood Academy is a leading educational institution providing high-quality education to students from diverse backgrounds. We strive for academic excellence and personal growth.",
-    "phoneNumber": "(123) 456-7890"
-  }
+  "school": [
+    {
+      "name": "Greenwood Academy",
+      "location": "456 Elm Street, Springfield",
+      "overallStudentCount": 100,
+      "overallStaffCount": 10,
+      "overallClassCount": 5,
+      "about": "Greenwood Academy is a leading educational institution providing high-quality education to students from diverse backgrounds. We strive for academic excellence and personal growth.",
+      "phoneNumber": "(123) 456-7890"
+    }
+  ]
 }
