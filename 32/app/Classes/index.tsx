@@ -1,12 +1,13 @@
 import React from 'react'
 import ClassesTable from './components/ClassesTable'
+import { ClassesPageWrapper } from './Classes.style'
 
 const Classes = () => {
   return (
-    <div>
+    <ClassesPageWrapper>
       <h1>Classes</h1>
       <ClassesTable />
-    </div>
+    </ClassesPageWrapper>
   )
 }
 
