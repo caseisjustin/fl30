@@ -2,6 +2,6 @@ export interface Teacher {
     id: number | string,
     firstName: string,
     lastName: string,
-    classes: number[] | string[],
+    classes: string[],
     birthDate: string
   }

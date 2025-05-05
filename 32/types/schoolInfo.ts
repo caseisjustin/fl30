@@ -1,4 +1,5 @@
 export interface SchoolInfo {
+    id: string,
     name: string,
     location: string,
     overallStudentCount: number,

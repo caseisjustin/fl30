@@ -1,4 +1,4 @@
-export const schoolTableCols = [
+export const schoolInfoTableCols = [
     {
         title: "Name",
         dataIndex: "name"

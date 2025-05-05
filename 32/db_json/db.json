@@ -1,19 +1,19 @@
 {
   "students": [
     {
-      "id": "1",
-      "firstName": "Hoshim",
-      "lastName": "Mirzayev",
-      "birthDate": "11-11-2011",
-      "classId": 2
+      "id": "4311",
+      "firstName": "Gayt",
+      "lastName": "Yato",
+      "birthDate": "02-01-3020",
+      "classId": "4"
     }
   ],
   "classes": [
     {
       "id": "1",
-      "name": "Urushqoqlar",
-      "studentCount": 1,
-      "teacherId": 1
+      "name": "TinchlikSevarlar",
+      "studentCount": "45",
+      "teacherId": "3"
     }
   ],
   "teachers": [
@@ -22,7 +22,7 @@
       "firstName": "Lola",
       "lastName": "Ahmedova",
       "classes": [
-        1
+        "1, 2, 3"
       ],
       "birthDate": "11-11-1989"
     }
@@ -35,7 +35,8 @@
       "overallStaffCount": 1,
       "overallClassCount": 1,
       "about": "Yaxshi maktab!",
-      "phoneNumber": "+9989565555551"
+      "phoneNumber": "+9989565555551",
+      "id": "e300"
     }
   ]
 }
