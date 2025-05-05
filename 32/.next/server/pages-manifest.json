@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 {}
+=======
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/school-info": "pages/school-info.js",
+  "/classes": "pages/classes.js",
+  "/teachers": "pages/teachers.js",
+  "/students": "pages/students.js"
+}
+>>>>>>> a862624c2a4284686746211791abc48d323d408f

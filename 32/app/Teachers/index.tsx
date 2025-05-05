@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TeachersTable from './components/TeachersTable'
 import { AddClassButton, TeachersPageWrapper } from './Teachers.style'
 import TeacherModal from './components/TeachersModal'
+import { TablesPageWrapper } from './Tables.style'
 
 const Teachers = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
