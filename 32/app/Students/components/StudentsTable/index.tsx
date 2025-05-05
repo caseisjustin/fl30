@@ -5,7 +5,7 @@ import { useStudents } from '@/hooks'
 import { Student } from '@/types'
 import { deleteStudent } from '@/api'
 import StudentModal from '../StudentsModal'
-import { DeleteButton, EditButton } from './StudentsTable.style'
+import { ButtonWrapper, DeleteButton, EditButton } from './StudentsTable.style'
 
 const StudentsTable = () => {
     const { data: students = [], isLoading, refetch } = useStudents();
@@ -39,10 +39,10 @@ const StudentsTable = () => {
     const dataWithActions = students?.map((student) => ({
         ...student,
         actions: (
-            <div className="flex space-x-2">
+            <ButtonWrapper>
                 <EditButton onClick={() => handleEdit(student)}>Edit</EditButton>
                 <DeleteButton onClick={() => handleDelete(student.id)}>Delete</DeleteButton>
-            </div>
+            </ButtonWrapper>
         )
     }))
 

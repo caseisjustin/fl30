@@ -5,7 +5,7 @@ import { useSchoolInfos } from '@/hooks'
 import { SchoolInfo } from '@/types'
 import { deleteSchoolInfo } from '@/api'
 import SchoolInfoModal from '../SchoolInfoModal'
-import { ActionButton, DeleteButton, EditButton } from './SchoolInfosTable.style'
+import { ActionButton, ButtonWrapper, DeleteButton, EditButton } from './SchoolInfosTable.style'
 
 const SchoolInfosTable = () => {
     const { data: schoolInfos, isLoading, refetch } = useSchoolInfos();
@@ -39,10 +39,10 @@ const SchoolInfosTable = () => {
     const dataWithActions = schoolInfos?.map((schoolInfo) => ({
         ...schoolInfo,
         actions: (
-            <div className="flex space-x-2">
+            <ButtonWrapper className="flex space-x-2">
                 <EditButton onClick={() => handleEdit(schoolInfo)}>Edit</EditButton>
                 <DeleteButton onClick={() => handleDelete(schoolInfo.id)}>Delete</DeleteButton>
-            </div>
+            </ButtonWrapper>
         )
     }))
     return (

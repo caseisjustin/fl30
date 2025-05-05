@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { createSchoolInfo, updateSchoolInfo } from '@/api/schoolInfo'
 import { SchoolInfo } from '@/types'
-import { Button, ModalActions, ModalContent } from './SchoolInfosModal.style'
+import { Button, ModalActions, ModalContent, ModalWrapper } from './SchoolInfosModal.style'
 
 interface Props {
     open: boolean
@@ -44,7 +44,7 @@ const SchoolInfoModal = ({ open, onClose, initialData, onSuccess }: Props) => {
     }
 
     return (
-        <div className='modal-overlay' >
+        <ModalWrapper>
             <ModalContent>
                 <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
                 <input name="location" placeholder="Location" value={form.location} onChange={handleChange} />
@@ -58,7 +58,7 @@ const SchoolInfoModal = ({ open, onClose, initialData, onSuccess }: Props) => {
                     <Button onClick={handleSubmit}>{initialData ? 'Update' : 'Create'}</Button>
                 </ModalActions>
             </ModalContent>
-        </div>
+        </ModalWrapper>
     )
 }
 

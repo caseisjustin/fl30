@@ -17,7 +17,7 @@ export const TableWrapper = styled.div`
     }
 
     th, td {
-        padding: 8px 6px;
+        padding: 6px 12px;
     }
 
     th {

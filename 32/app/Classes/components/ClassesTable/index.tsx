@@ -5,7 +5,7 @@ import { useClasses } from '@/hooks'
 import { Class } from '@/types'
 import { deleteClass } from '@/api'
 import ClassModal from '../ClassesModal'
-import { DeleteButton, EditButton } from './ClassesTable.style'
+import { ButtonWrapper, DeleteButton, EditButton } from './ClassesTable.style'
 
 const ClassesTable = () => {
     const { data: classdatas, isLoading, refetch } = useClasses();
@@ -39,10 +39,10 @@ const ClassesTable = () => {
     const dataWithActions = classdatas?.map((classdata) => ({
         ...classdata,
         actions: (
-            <div className="flex space-x-2">
+            <ButtonWrapper className="flex space-x-2">
                 <EditButton onClick={() => handleEdit(classdata)}>Edit</EditButton>
                 <DeleteButton onClick={() => handleDelete(classdata.id)}>Delete</DeleteButton>
-            </div>
+            </ButtonWrapper>
         )
     }))
     return (

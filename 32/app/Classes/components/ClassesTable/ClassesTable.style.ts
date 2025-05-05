@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`
+
 export const ActionButton = styled.button`
   padding: 6px 12px;
   font-size: 14px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { createClass, updateClass } from '@/api/class'
 import { Class } from '@/types'
-import { Button, ModalActions, ModalContent } from './ClassesModal.style'
+import { Button, ModalActions, ModalContent, ModalWrapper } from './ClassesModal.style'
 
 interface Props {
     open: boolean
@@ -40,7 +40,7 @@ const ClassModal = ({ open, onClose, initialData, onSuccess }: Props) => {
     }
 
     return (
-        <div className='modal-overlay' >
+        <ModalWrapper>
             <ModalContent>
                 <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
                 <input name="studentCount" placeholder="Student's amount" value={form.studentCount} onChange={handleChange} />
@@ -50,7 +50,7 @@ const ClassModal = ({ open, onClose, initialData, onSuccess }: Props) => {
                     <Button onClick={handleSubmit}>{initialData ? 'Update' : 'Create'}</Button>
                 </ModalActions>
             </ModalContent>
-        </div>
+        </ModalWrapper>
     )
 }
 
