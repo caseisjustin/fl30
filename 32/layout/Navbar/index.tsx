@@ -9,10 +9,8 @@ const Navbar = () => {
                 MySchool
             </div>
             <nav className="menu">
-                <Link href="/home">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/services">Services</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/login">Log In</Link>
+                <Link href="/register">Sign Up</Link>
             </nav>
         </NavbarWrapper>
     )

@@ -38,5 +38,12 @@
       "phoneNumber": "+9989565555551",
       "id": "e300"
     }
+  ],
+  "users": [
+    {
+      "id": "60ba",
+      "email": "helkjwoef@kljf.com",
+      "password": "lawkje983"
+    }
   ]
 }
