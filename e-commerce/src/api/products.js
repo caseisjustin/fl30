@@ -1,20 +1,21 @@
 import { toast } from "react-toastify";
 import instance from "./instance";
 
-export const getProductsApi = async (params) => {
-    try {
-        const res = await instance.get(`/Products?category=${params.category}`);
-        return res.data;
-    } catch (e) {
-        toast.error("Failed to fetch Products!");
-    }
-};
 
 export const getAllProducts = async (params ={}) => {
     try {
         const res = await instance.get('/Products', {params});
         return res.data;
     } catch (err) {
+        toast.error("Failed to fetch Products!");
+    }
+};
+
+export const getProductsByCategory = async (params) => {
+    try {
+        const res = await instance.get(`/Products?category=${params.category}`);
+        return res.data;
+    } catch (e) {
         toast.error("Failed to fetch Products!");
     }
 };

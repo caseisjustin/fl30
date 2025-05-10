@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ProductCard } from "../../../../components";
 import { getAllProducts } from "../../../../api/products";
 
-const NewArrivals = () => {
+const TopSelling = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,7 +12,7 @@ const NewArrivals = () => {
         const products = await getAllProducts({l: 4, p: 1});
         setProducts(products);
       } catch (error) {
-        console.error("Failed to fetch new arrivals:", error);
+        console.error("Failed to fetch You might like:", error);
       } finally {
         setLoading(false);
       }
@@ -24,14 +24,14 @@ const NewArrivals = () => {
   return (
     <section className="px-8 py-16">
       <div className="flex items-center flex-col">
-        <h2 className="text-3xl font-bold mb-6">NEW ARRIVALS</h2>
+        <h2 className="text-3xl font-bold mb-6">YOU MIGHT ALSO LIKE</h2>
         {loading ? (
           <p className="text-center">Loading...</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
             {products?.map((product) => (
               <ProductCard
-                key ={product.id}
+                key={product.id}
                 id={product.id}
                 images={product.images}
                 title={product.title}
@@ -47,4 +47,4 @@ const NewArrivals = () => {
   );
 };
 
-export default NewArrivals;
+export default TopSelling;

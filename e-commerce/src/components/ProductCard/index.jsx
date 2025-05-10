@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { FiHeart, FiStar } from "react-icons/fi";
 import { AiFillHeart } from "react-icons/ai";
 
-const ProductCard = ({ id, image, title, category, price, rating }) => {
+const ProductCard = ({ id, images, title, category, price, rating }) => {
   const [liked, setLiked] = useState(false);
   const navigate = useNavigate();
 
   const toggleLike = (e) => {
-    e.stopPropagation(); // Prevent navigation when clicking the like button
+    e.stopPropagation();
     setLiked((prev) => !prev);
   };
 
   const handleCardClick = () => {
-    navigate(`/product/${id}`);
+    navigate(`/productDetails/${id}`);
   };
 
   return (
@@ -23,7 +23,7 @@ const ProductCard = ({ id, image, title, category, price, rating }) => {
     >
       <div className="relative">
         <img
-          src={image}
+          src={images[0]}
           alt={title}
           className="rounded-xl h-60 w-full object-cover"
         />

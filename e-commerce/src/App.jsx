@@ -1,11 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router';
 import Layout from './layout/Layout';
-import ProductDetails from './pages/ProductDetails/ProductDetails';
 import { ToastContainer } from 'react-toastify';
-
 import HomePage from './pages/Home';
-import CategoryDetails from './pages/Category/CategoryDetails';
+import CategoryDetails from './pages/Category/components/';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />}/>
           <Route path='/category/:categoryId' element={<CategoryDetails />}/>
-          <Route path='productDetail/:id' element={<ProductDetails />}/>
+          <Route path='productDetails/:id' element={<ProductDetails />}/>
         </Route>
       </Routes>
       <ToastContainer />

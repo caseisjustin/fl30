@@ -3,12 +3,13 @@ import FilterSidebar from './FilterSidebar'
 import { Breadcrumb } from '../../../components'
 
 import './CategoryDetails.scss'
+import FilteredProducts from './FilteredProducts'
 
 const CategoryDetails = () => {
     return (
-        <div className='container'>
-            <Breadcrumb />
+        <div className='container flex'>
             <FilterSidebar />
+            <FilteredProducts />
         </div>
     )
 }
