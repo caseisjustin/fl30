@@ -1,0 +1,5 @@
+export { default as NewArrivals } from './NewArrivals'
+export { default as TopSelling } from './TopSelling'
+export { default as BrandCarousel } from './BrandCarousel'
+export { default as Testimonials } from './Testimonials'
+export { default as NewsLetter } from './NewsLetter'
